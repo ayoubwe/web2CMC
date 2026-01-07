@@ -1,0 +1,10 @@
+import { createRoot } from "react-dom/client";
+// import App from "./App.tsx";
+import "./index.css";
+
+createRoot(document.getElementById("root")!).render(
+  // Temporary: mount a minimal element to confirm the runtime works
+  <div style={{ padding: 20, fontFamily: "Inter, sans-serif" }}>
+    Dev mount OK — if you see this, the issue is inside App or its children.
+  </div>
+);
