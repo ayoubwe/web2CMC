@@ -5,6 +5,9 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  // If you're deploying to a GitHub project page (e.g. https://ayoubwe.github.io/web2CMC/)
+  // set base to the repo name. Change '/web2CMC/' to your repo path if different.
+  base: mode === "production" ? "/web2CMC/" : "/",
   server: {
     host: "::",
     port: 8080,
